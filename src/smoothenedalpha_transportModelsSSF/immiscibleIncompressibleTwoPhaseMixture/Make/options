@@ -1,0 +1,14 @@
+EXE_INC = \
+    -I.. \
+    -I../incompressible/lnInclude \
+    -I../interfaceProperties/lnInclude \
+    -I../twoPhaseMixture/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude
+
+LIB_LIBS = \
+     -L$(FOAM_USER_LIBBIN) \
+    -l2tSSFwoPhaseMixture_smooth \
+    -l2tSSFincompressibleTransportModels_smooth \
+    -l2tSSFinterfaceProperties_smooth \
+    -l2tSSFwoPhaseProperties_smooth \
+    -lfiniteVolume
